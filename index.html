@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+	<header>
+		<div class="container">
+			<h3>Bookmarker</h3>
+		</div>
+	</header>
+	<div class="container">
+		<div class="well">
+			<div class="column">
+				<h2>Bookmark your favorite sites </h2>
+				<p>Site Name</p>
+				<input id="siteName" placeholder="Bookmark Name" type="text" required />
+				<p class="alert alert-error m-auto" id="namealert"></p>
+				<p>Site URL</p>
+				<input id="siteUrl" placeholder="website URL" type="text" required/>
+				<p class="alert alert-error m-auto" id="urlalert"></p>
+				<div class="m-auto">
+						<button class="btn btn-primary" onclick="addUrl()">Submit</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div id="bookmarkList" class="column">
+           
+
+
+
+		</div>
+	</div>
+	<footer>
+		<div class="container">
+			<p>&copy; 2019 Bookmarker Inc.</p>
+		</div>
+	</footer>
+ <script src="Script.js"></script>
+
+</body>
+
+</html>
